@@ -1,0 +1,40 @@
+footer.flex{
+    justify-content: space-between; 
+    padding-bottom: 1.9rem;
+    ul{
+        gap: 1rem; 
+    }
+    li , a{
+        all: unset;
+        cursor: pointer;
+    }
+    a{
+        color: var(--subtitle);
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+        font-weight: 400;
+    }
+    p{
+        font-size: 0.88rem;
+        color: rgb(113, 113, 122);
+    }
+}
+
+/* hovers */
+footer ul li a:hover {
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* screen size custumize*/
+@media (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

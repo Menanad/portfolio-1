@@ -1,0 +1,188 @@
+section.contact-us {
+   
+    form {
+        flex-direction: column;
+    }
+
+    div.title {
+        font-size: 2.1rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        color: var(--title);
+        margin-bottom: 1rem;
+        gap: 5px;
+
+        div.icon-contact-us {
+            color: var(--subtitle);
+            margin-right: 1rem;
+            font-size: 1.8rem;
+            position: relative;
+            top: 3px;
+        }
+
+    }
+
+    p {
+        color: var(--subtitle);
+        margin-bottom: 2rem;
+        line-height: 1.6rem;
+    }
+
+    div label {
+        color: var(--subtitle);
+    }
+
+    div input,
+    #message {
+        all: unset;
+        background-color: rgba(63, 63, 70, 0.15);
+        border: 1px solid rgb(63 63 70);
+        width: 16rem;
+        padding: 0.5rem 1rem;
+        margin-left: 1rem;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        font-size: 1.1rem;
+    }
+
+    div #message {
+        min-height: 9rem;
+        resize: vertical;
+        scrollbar-width: none;
+        max-height: 30rem;
+
+    }
+
+    button.submit {
+        background-color: rgba(36, 37, 46, 1);
+        padding: .75rem 1.9rem;
+        margin: 5px 0;
+        text-align: center;
+        font-size: 1.05rem;
+        text-transform: capitalize;
+        margin-top: 1.8rem;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        border: 1px solid rgb(63, 63, 70);
+    }
+
+
+}
+
+/* custom on light mode */
+.light section.contact-us div input,
+.light section.contact-us #message {
+    background-color: rgba(255, 255, 255, 0.162);
+    color: #232324;
+    border: 1px solid rgba(128, 128, 128, 0.451);
+    box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
+}
+
+.light section.contact-us div input:focus,
+.light section.contact-us #message:focus,
+.light section.contact-us div input:hover,
+.light section.contact-us #message:hover {
+    border-color: rgb(78 80 80);
+}
+
+/* hovers */
+section.contact-us div button.submit:hover {
+    scale: 0.97;
+}
+
+section.contact-us div input:focus,
+section.contact-us #message:focus,
+section.contact-us div input:hover,
+section.contact-us #message:hover {
+    border-color: rgb(45, 212, 191);
+}
+
+/* loader animation */
+.loader {
+    display: block;
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #3498db;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: spin 1s linear infinite;
+    /*Safari*/animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* media  */
+@media (max-width:600px) {
+    section.contact-us form {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+
+    section.contact-us form div.flex {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+
+    }
+
+    section.contact-us form input,
+    section.contact-us form #message {
+        width: 100%;
+        margin-left: 0;
+        padding: 0.7rem 0px;
+        margin-top: 1rem;
+    }
+
+    section.contact-us div.animation {
+        display: none;
+    }
+
+    section.contact-us button.submit {
+        width: 30%;
+        padding: .75rem 0rem;
+        align-self: center;
+        text-align: center;
+    }
+}
+@media (max-width:870px){
+    section.contact-us .animation{
+        display: none;
+    }
+}

@@ -1,0 +1,38 @@
+verified=======
+import { MdVerified } from "react-icons/md";
+<MdVerified />
+
+----------------
+instagram=======
+import { FaInstagram } from "react-icons/fa";
+<FaInstagram />
+
+----------------------
+git hup===========
+import { IoLogoGithub } from "react-icons/io";
+<IoLogoGithub />
+
+--------------------
+linked in=================
+import { FaLinkedin } from "react-icons/fa6";
+<FaLinkedin />
+
+--------------------
+link==============
+import { FaLink } from "react-icons/fa6";
+<FaLink />
+
+---------------------
+arrow right=====
+import { FaArrowRight } from "react-icons/fa";
+<FaArrowRight />
+
+-----------------
+arrow up====
+import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+<MdOutlineKeyboardArrowUp />
+
+----------------------
+mail===========
+import { FaEnvelope } from "react-icons/fa";
+<FaEnvelope />

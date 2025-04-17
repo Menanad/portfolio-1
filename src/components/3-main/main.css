@@ -1,0 +1,81 @@
+/* 
+==================
+1-main style
+2-left section=>button
+3-right section=>projects
+==================
+ */
+/* 1-main style */
+
+main.flex {
+    gap: 2.6rem;
+    align-items: start;
+}
+
+/* 2-left section=>button */
+main.flex section.left{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main.flex section.left button.btn{
+    background-color: rgba(36,37,46,1);
+    width: 14rem;
+    padding: 0.75rem 0;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+main.flex section.left button.btn:hover{
+    opacity: 1;
+}
+main.flex section.left button.active{
+    border: 1px solid var(--blue);
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 0.8rem 0;
+}
+.light main.flex section.left button.active{
+    border: 1px solid #000;
+}
+
+/* 3-right section=>projects */
+main.flex section.right{
+    flex-grow: 1;
+    margin: 5px;
+     justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 16px;
+}
+@media (max-width:600px){
+    main.flex {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    main.flex section.left{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    main.flex section.left button.btn{
+        width: 7rem;
+        padding: 0.8rem 0;
+        font-size: 0.9rem;
+    }
+}
