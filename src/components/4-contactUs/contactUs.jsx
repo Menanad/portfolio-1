@@ -20,7 +20,7 @@ export default function ContactUs() {
     setLoad(true)
     setdisable(true)
     try {
-      const response = await fetch('https://formsubmit.co/ajax/menanady7049@gmail.com', {
+      const response = await fetch('https://formsubmit.co/menanady7049@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
