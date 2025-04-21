@@ -34,38 +34,38 @@ export default function Header() {
       setMode("dark")
     }
   }
-    return (
-      <header className='flex'>
+  return (
+    <header className='flex'>
 
-        <button onClick={() => setclick(true)} className='menu' >
-          <IoMdMenu />
-        </button>
-        <div />
-        {click && <div className='fixed'>
-          <ul className='modal'>
-            <li>
-              <button className='icon-clear' onClick={() => setclick(false)}><MdOutlineClose /></button>
-            </li>
-            <li><a href="">About</a></li>
-            <li><a href="">Articles</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Speaking</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>}
-        <nav>
-          <ul className='flex '>
-            <li><a href="">About</a></li>
-            <li><a href="">Articles</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Speaking</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </nav>
-        <button onClick={changeMode} className='icon-moon'>
-          {mode === "dark" ? <FaRegMoon /> :  <FiSun />}
+      <button onClick={() => setclick(true)} className='menu' >
+        <IoMdMenu />
+      </button>
+      <div />
+      {click && <div className='fixed'>
+        <ul className='modal'>
+          <li>
+            <button className='icon-clear' onClick={() => setclick(false)}><MdOutlineClose /></button>
+          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#main">Articles</a></li>
+          <li><a href="#main">Projects</a></li>
+          <li><a href="#contact">Speaking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>}
+      <nav>
+        <ul className='flex '>
+          <li><a href="#about">About</a></li>
+          <li><a href="#main">Articles</a></li>
+          <li><a href="#main">Projects</a></li>
+          <li><a href="#contact">Speaking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button onClick={changeMode} className='icon-moon'>
+        {mode === "dark" ? <FaRegMoon /> : <FiSun />}
 
-        </button>
-      </header>
-    )
-  }
+      </button>
+    </header>
+  )
+}

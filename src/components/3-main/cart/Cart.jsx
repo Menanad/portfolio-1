@@ -16,7 +16,7 @@ export default function Cart(props) {
             <img loading="lazy" src={props.image || image} alt="" />
             <div className="box">
                 <h1 className="title">{props.title || "title"}</h1>
-                <p className="sub-title">{props.description || "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, mollitia."}</p>
+                <p className="sub-title">{props.description.length>50 ? props.description.slice(0,100)+ "....": props.description || "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, mollitia."}</p>
                 <div className="flex icons">
                     <div className="flex">
                         <button onClick={() => window.location.href = props.linkDemo || '/'} className="btn"><FaLink /></button>

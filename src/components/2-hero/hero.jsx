@@ -8,7 +8,7 @@ import Dev from '../../animations/dev.json'
 import Lottie from 'lottie-react';
 export default function Hero() {
   return (
-    <section className='hero flex'>
+    <section id="about" className='hero flex'>
       <div className='left-section '>
         <div className="parent-avater flex">
           <img
@@ -21,11 +21,11 @@ export default function Hero() {
             <span className='wave'>👋🏻</span>
           </h1>
           <h1
-             
+
             className='title'>I'M
             <strong > Mena Nady Slash</strong>
           </h1>
-          <h1           
+          <h1
             className='bg-blue'>
             <Typewriter
               words={['Front-End Developer.', 'Freelancer.']}
@@ -43,18 +43,24 @@ export default function Hero() {
           Proficient in developing front-end applications using React, I specialize in building component-based architectures and managing application state with Redux or Context API. My skill set includes utilizing React Hooks, React Router, and integrating RESTful APIs. I am committed to writing clean, maintainable code that prioritizes performance and user experience
         </p>
         <div className="all-icons flex">
-          <div className="icon">
-            <FaInstagram />
-          </div>
-          <div className="icon">
-            <IoLogoGithub />
-          </div>
-          <div className="icon">
-            <FaLinkedin />
-          </div>
+          <a href='https://www.instagram.com/mena_nady_slash?igsh=MTRwdWZmNWprZHBqeg%3D%3D&utm_source=qr'>
+            <div className="icon">
+              <FaInstagram />
+            </div>
+          </a>
+          <a href='https://github.com/Menanad'>
+            <div className="icon">
+              <IoLogoGithub />
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/mena-nady-2163a2303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+            <div className="icon">
+              <FaLinkedin />
+            </div>
+          </a>
         </div>
       </div>
-      <div className='right-section '>
+      <div className='right-section'>
         <Lottie animationData={Dev} />
       </div>
     </section>

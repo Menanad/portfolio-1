@@ -61,7 +61,7 @@ export default function ContactUs() {
   }
 
   return (
-    <section className=' contact-us '>
+    <section id='contact' className=' contact-us '>
       <div className='title'>
         <div className='icon-contact-us'>
           <FaEnvelope />

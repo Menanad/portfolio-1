@@ -5,16 +5,16 @@ export default function Footer() {
     <footer className='flex'>
       <ul className='flex'>
         <li>
-          <a href="">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a href="#main">Projects</a>
         </li>
         <li>
-          <a href="">Speaking</a>
+          <a href="#contact">Speaking</a>
         </li>
         <li>
-          <a href="">Users</a>
+          <a href="#up">Users</a>
         </li>
       </ul>
       <p>© 2025 Mena Slash . All rights reserved</p>

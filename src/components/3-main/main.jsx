@@ -35,13 +35,12 @@ export default function Main() {
     )
   })
   return (
-    <main className='flex '>
+    <main id='main' className='flex '>
       <section className='left  '>
         <button onClick={(e) => filterData(e)} name='all' className={`btn ${active == "all" ? "active" : null}`}>All Projects</button>
         <button onClick={(e) => filterData(e)} name='html' className={`btn ${active == "html" ? "active" : null}`}>HTML & CSS</button>
         <button onClick={(e) => filterData(e)} name='javascript' className={`btn ${active == "javascript" ? "active" : null}`}>JavaScript</button>
         <button onClick={(e) => filterData(e)} name='react' className={`btn ${active == "react" ? "active" : null}`}>React & CSS Frameworks</button>
-        <button onClick={(e) => filterData(e)} name='bootstrap' className={`btn ${active == "bootstrap" ? "active" : null}`}>Bootstrap</button>
       </section>
       <section className='right flex '>
           {showData}
