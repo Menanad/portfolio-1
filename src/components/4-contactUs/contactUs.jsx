@@ -50,6 +50,8 @@ export default function ContactUs() {
       setLoadtrue(true)
       setdisable(false)
       handleTimeout()
+      setEmail('')
+      setMessage('')
     }
   };
 
